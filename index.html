@@ -1,0 +1,54 @@
+<div class="background-animation"></div>
+
+<div class="container">
+    <div class="form-container">
+        <div class="form-box login" id="loginBox">
+            <form id="loginForm">
+                <h2>Giriş Et</h2>
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="loginEmail" required>
+                    <label>E-poçt</label>
+                </div>
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="loginPass" required>
+                    <label>Şifrə</label>
+                </div>
+                <button type="submit" class="btn">Daxil Ol</button>
+                <div class="link">
+                    <p>Hesabınız yoxdur? <a href="#" onclick="toggleForm('register')">Qeydiyyatdan keç</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register hidden" id="registerBox">
+            <form id="registerForm">
+                <h2>Hesab Yarat</h2>
+                <div class="input-box">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="regUser" required>
+                    <label>İstifadəçi Adı</label>
+                </div>
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="regEmail" required>
+                    <label>E-poçt</label>
+                </div>
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="regPass" required>
+                    <label>Şifrə</label>
+                </div>
+                <button type="submit" class="btn">Qeydiyyatı Tamamla</button>
+                <div class="link">
+                    <p>Artıq üzvsünüz? <a href="#" onclick="toggleForm('login')">Giriş edin</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="toast" class="toast"></div>
+</div>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
